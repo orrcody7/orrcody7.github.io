@@ -89,7 +89,7 @@
     color: white;
   }
   .card {
-    margin: 100, 0, 100, 0;
+    margin: 100, 20, 100, 20;
     padding: 20px 20px 20px 20px;
     max-width: auto;
     text-align: left;
@@ -101,7 +101,7 @@
   
   .stack {
       z-index: 9px;
-      margin: 30px;
+      margin-top: 60px;
   }
   
   ul.skills {
