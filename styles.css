@@ -10,7 +10,7 @@
     font-family: 'Roboto', sans-serif;
     color: #222;
     background: #f7f5f0;
-  }
+  }/*f7f5f0
   /* Link Styles */
   
   a {
@@ -21,7 +21,7 @@
     color: #6633ff;
   }
   
-  /* Section Styles */
+  /* nav Section Styles */
   
   .main-nav {
     width: 100%;
@@ -30,6 +30,7 @@
     padding: 10px;
     position: fixed;
     text-align: center;
+    z-index: 1;
   }
   .nav {
     display: flex;
@@ -50,6 +51,13 @@
   }
   .nav a:hover {
     color: #a3ffe0
+  }
+
+  h2.anchor {
+      display: block;
+      position: relative;
+      top: -500px;
+      visibility: hidden;
   }
   
   header {
@@ -89,7 +97,7 @@
     color: white;
   }
   .card {
-    margin: 100, 20, 100, 20;
+    margin: 100, 0, 100, 0;
     padding: 20px 20px 20px 20px;
     max-width: auto;
     text-align: left;
@@ -103,8 +111,73 @@
       z-index: 9px;
       margin-top: 60px;
   }
+
+
+/* Styling for the project images */
+
+
+
+  div.project_image {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    border: 3px solid black;
+    transition: all .5s;
+  }
+
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* attempting to add hover overlay to project images*/
+
+  .container {
+    position: relative;
+    width: 50%;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10%;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #0f1f24;
+  }
   
-  ul.skills {
+  .container:hover .overlay {
+    opacity: 80%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  
+  /* ul.skills {
     padding: 0;
     text-align: center;
   }
@@ -119,8 +192,8 @@
   }
   
   .skills li:nth-child(odd) {
-    background: #0399ff;
-  }
+    background: #0399ff; */
+  /* } */
   
   footer {
     width: 100%;
@@ -151,20 +224,21 @@
     width: 30px;
     height: 30px;
     background-size: 30px 30px;
-    opacity: .5;
+    opacity: .8;
     transition: all .25s;
   }
-  a.twitter {
-    background-image: url(images/twitter.svg);
-  }
+
+/** social media stylings **/
+
   a.linkedin {
     background-image: url("images/linkedin.png");
   }
   a.github {
-    background-image: url(images/github.svg);
+    background-image: url("images/github.png");
   }
   a.social:hover {
     opacity: 1;
+    transform: scale(1.2);
   }
   .clearfix {
     clear: both;

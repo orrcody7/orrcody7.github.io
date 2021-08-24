@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cody's Portfolio</title>
 </head>
 <body>
     <div class="main-nav">
         <ul class="nav">
           <li class="name">Cody Orr</li>
           <li><a href="#">Home</a></li>
-          <li><a href="#about me">About Me</a></li>
+          <li><a href="#about_me">About Me</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 
     <header>
-      <img src="images/Digital Media profile pic.png" alt="Picture of a computer" class="profile-image">
+      <img src="images/Digital Media profile pic.png" alt="Picture of Cody" class="profile-image">
       <h1 class="tag name">Hello, I’m Cody.</h1>
       <p class="tag location">My home is Chambersburg, Pennsylvania.</p>
     </header>
@@ -27,9 +27,18 @@
     <main class="flex">
         <div>
             <div class="card">
-                <h2>About Me</h2>
-                <p>I’m an aspiring web designer who loves everything about the web. I've lived in lots of different places and have worked in lots of different jobs. I’m excited to bring my life experience to the process of building fantastic looking websites.</p>
-                <p>I have over 8 years of experience in the Navy and am a life-long learner who's always interested in expanding my skills.</p>
+                <h2 id="about_me" style="padding-top: 80px; margin-top: -80px;">About Me</h2>
+                <!-- <p>I’m an aspiring web designer who loves everything about the web. I've lived in lots of different places and have worked in lots of different jobs. I’m excited to bring my life experience to the process of building fantastic looking websites.</p> -->
+                <!-- <p>I have over 8 years of experience in the Navy and am a life-long learner who's always interested in expanding my skills.</p> -->
+                <p>Hi, my name is Cody M Orr. I am 29 years old and a veteran of the United States Navy. I grew up in Castle Rock, Colorado and then moved at the end of the summer when I graduated, to head to bootcamp.</p>
+                <p>I spent 7 years on active duty, as a Logistics Specialist. I also had the unique opportunity to be a shipboard Search and Rescue swimmer.
+                    I traveled to many different countries across 4 continents and got to experience many different cultures in the process!</p>
+                <p>I now serve in the US Navy Reserves as a Builder 2nd class with the Seabees. I love the military culture and being part of a team that works towards one big goal!</p>
+                <p>After coming off of active duty, I struggled to figure out exactly what was next for me. One thing that caught my attention was “coding.” I saw it in movies and thought it was so crazy how people can turn a blank screen in to something absolutely stunning!</p>
+                <p>I eventually found devCodeCamp and took my time really researching these coding bootcamps and seeing if it was a real thing. After about 6 months, I finally talked it over with my wife and took the plunge!</p>
+                <p>I am now a full time student and have already developed entry level skills in JavaScript, Python, SQL, HTML, CSS, Django, and React. I have also worked on individual as well as group projects to develop the teamwork skills necessary as a developer.</p>
+                <p>At home, I am a husband to my wife, Mikayla who has been in my life since we were 10 years old. I am also a father to two crazy boys! We enjoy spending our time playing sports or going outdoors and really enjoying nature at national parks and local trails.</p>
+                <p>Thank you for taking the time to get to know just a little about me, and I look forward to hearing from you!</p>
             </div>   
 
             <!-- <div class="card stack">
@@ -46,23 +55,64 @@
             </div> -->
             
             <div class="card stack">
-                <h2>Projects</h2>
+                <h2 id="projects" style="padding-top: 80px; margin-top: -80px;">Projects</h2>
                 <p>Here is a list of all the projects I have completed:</p>
+                <div class="row">
+                    <div class="project_image column container">
+                        <img src="images/most wanted.png" alt="picture of Most Wanted in red letters" style="width: 100%; border-radius: 10%;">
+                        <div class="overlay">
+                            <div class="text">Most Wanted User<br>(JavaScript)
+                                <p>JavaScript project that uses a large associative array for key traits about individuals</p>
+                                <p>user can search for people using traits</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project_image column container">
+                        <img src="images/rpsls.png" alt="diagram of rock, paper, scissors, lizard, spock" style="width: 100%; border-radius: 10%;">
+                        <div class="overlay">
+                            <div class="text">Rock, Paper, Scissors, Lizard, spock<br>(JavaScript)
+                                <p>1 or 2 player game using functions, conditions, and loops</p>
+                                <p>played through the console</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project_image column container">
+                        <img src="images/robot vs dinosaur.png" alt="picture of robot fight dinosaur" style="width: 100%; border-radius: 10%;">
+                        <div class="overlay">
+                            <a href="https://github.com/orrcody7/mostWantedUser_Project" target="_blank">
+                            <div class="text">Robots vs Dinosaur game<br>(Python OOP)
+                                <p>created objects with properties and used logic to create a turn-based game</p></div></a>
+                        </div>
+                    </div>
+
+                    <div class="project_image column container">
+                        <img src="images/soda machine.png" alt="vector image of a soda machine" style="width: 100%; border-radius: 10%;">
+                        <div class="overlay">
+                            <div class="text">Soda Machine Debug Project<br>(Python)
+                                <p>two-person project that required us to take broken code and fix all syntax errors and find all the bugs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="card stack">
-                <h2>Contact</h2>
+                <h2 id="contact" style="padding-top: 80px; margin-top: -80px;">Contact</h2>
                 <p>Here is how you can reach me:</p>
+                <p>email: orrcody7@gmail.com</p>
+                <p>to find my resume and message me directly,<br>please visit:
+                <a href="https://linkedin.com/in/codymorr" target="_blank" class="social linkedin">LinkedIn</a></p>
+
+                <p>to visit my GitHub and see my work,<br> please visit:
+                <a href="https://github.com/orrcody7" target="_blank" class="social github">Github</a></p>
+
             </div>
         </div>
 
     </main>
     <footer>
-      <ul>
-        <li><a href="#" class="social twitter">Twitter</a></li>
-        <li><a href="#" class="social linkedin">LinkedIn</a></li>
-        <li><a href="#" class="social github">Github</a></li>
-      </ul>
       <p class="copyright">Copyright 2021, Cody Orr</p>
     </footer>
   </body>
